@@ -188,6 +188,7 @@ def pregunta_10():
         x["_c2"][i].sort()
         x["_c2"][i] = str(x["_c2"][i]).replace(",",":")
         x["_c2"][i] = x["_c2"][i].replace(" ","")
+        x["_c2"][i] = x["_c2"][i][1:-1]
     x = x.set_index("_c1")    
 
     return x
